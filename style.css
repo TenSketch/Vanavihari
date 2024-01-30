@@ -8,22 +8,47 @@ img {
   display: block;
 }
 
-.navbar-brand img {
-  width: min(200px, 70%);
-}
-
 .dropdown-menu {
   left: unset !important;
   right: 0 !important;
 }
 
-.nav-item {
-  text-align: right !important;
-}
 .nav-item .nav-link {
   font-size: 0.9rem;
 }
 
+/* Apply bold style to the horizontal ruler */
+.dropdown-divider {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+  /* Set the color of the bold line */
+  margin: 10px 0;
+  /* Adjust margin as needed */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navbar-brand img {
+  max-height: 40px;
+  /* Adjust the height as needed */
+}
+
+.navbar-toggler {
+  flex: 0 0 auto;
+  /* Fix typo and set flex properties for the toggler */
+}
+
+/* Center the logo only on small screens */
+@media (max-width: 575.98px) {
+  .center-logo {
+    text-align: center;
+  }
+}
 /* Custom Styles */
 .carousel-item {
   height: 80vh;
