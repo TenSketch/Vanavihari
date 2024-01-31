@@ -165,7 +165,44 @@
             </div>
         <!-- carousel end -->
         <!-- Kaviya search section -->
-
+        <div class="container">
+            <div class="search-bar">
+                <div class="row g-2 align-items-center">
+                    <div class="col-md-2">
+                        <label for="location" class="form-label">Resorts</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter city or landmark">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="fromDate" class="form-label">From Date</label>
+                        <input type="date" class="form-control" id="fromDate" placeholder="dd-mm-yyyy">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="toDate" class="form-label">To Date</label>
+                        <input type="date" class="form-control" id="toDate" placeholder="dd-mm-yyyy">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="adults" class="form-label">Adults</label>
+                        <input type="number" class="form-control" id="adults" min="1" placeholder="1">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="children" class="form-label">Children</label>
+                        <div class="input-group-number">
+                            <input type="number" class="form-control" id="children" min="0" placeholder="0">
+                            <!-- You can add buttons here if needed -->
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="rooms" class="form-label">Rooms</label>
+                        <div class="input-group-number">
+                            <input type="number" class="form-control" id="rooms" min="1" value="1">
+                            <!-- You can add buttons here if needed -->
+                            <button type="submit" class="btn btn-primary search-button">Search</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- search ends -->
         <!-- our resorts section -->
         <div class="container mt-5">

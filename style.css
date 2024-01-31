@@ -70,3 +70,40 @@ img {
 .slide2 {
   background-image: url(/img/vihari-room.jpg);
 }/*# sourceMappingURL=style.css.map */
+
+.search-bar {
+  /* Adjust margin to accommodate additional sections */
+  margin-bottom: 30px;
+}
+
+.col-sm-4 {
+  padding: 0 5px;
+}
+
+.form-select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.input-group-number {
+  display: flex;
+  align-items: center;
+}
+.input-group-number input.form-control{
+  width: 230px;
+  
+}
+
+.input-group-number button {
+  margin-left: 5px;
+}
+
+.search-button {
+  margin-top: 0px;
+
+}
