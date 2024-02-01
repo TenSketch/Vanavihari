@@ -1,78 +1,105 @@
 // scss variable
-
-body{
+body {
     background-color: lightgreen;
 }
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
 }
-
-header{}
-.navbar-brand{
-    img{
-        width: min(200px, 70%);
-    }
+.dropdown-menu {
+    left: unset !important;
+    right: 0 !important;
 }
-.dropdown-menu{
-    left: unset!important;
-    right: 0!important;
-}
-.nav-item{
-    text-align: right!important;
-    .nav-link{
+.nav-item {
+    // text-align: right !important;
+    .nav-link {
         font-size: 0.9rem;
     }
 }
-// carousel slide
+// Kaviya
+/* Apply bold style to the horizontal ruler */
+.dropdown-divider {
+    border: 0;
+    height: 1px;
+    background-color: #000;
+    /* Set the color of the bold line */
+    margin: 10px 0;
+    /* Adjust margin as needed */
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+        max-height: 40px;
+        // margin-right: 50px
+        /* Adjust the height as needed */
+    }
+}
+.navbar-toggler {
+    flex: 0 0 auto;
+    /* Fix typo and set flex properties for the toggler */
+}
 
- /* Custom Styles */
- .carousel-item {
+/* Center the logo only on small screens */
+@media (max-width: 575.98px) {
+    .center-logo {
+        text-align: center;
+    }
+}
+.nav-x{
+    flex-basis: auto;
+    flex-grow: 0;
+}
+
+// carousel slide
+/* Custom Styles */
+.carousel-item {
     height: 80vh;
     // background-position: center;
     // background-size: cover;
     // position: relative;
-  }
-
-  .overlay {
+}
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .caption {
+}
+.caption {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
     color: #fff;
-  }
-
-  .caption .title {
+}
+.caption .title {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
-  }
-
-  .caption .description {
+}
+.caption .description {
     font-size: 1.5rem;
     text-align: center;
-  }
-
-  /* Media Queries */
-  @media (min-width: 768px) {
+}
+/* Media Queries */
+@media (min-width: 768px) {
     .caption .description {
-      text-align: left;
+        text-align: left;
     }
-  }
-  .slide1{
+}
+.slide1 {
     background-image: url(/img/OUTER.jpg);
-  }
-  .slide2{
+}
+.slide2 {
     background-image: url(/img/vihari-room.jpg);
+<<<<<<< HEAD
   }
   
+=======
+}
+>>>>>>> 3cc3a342ffd4e3e6ac9ba57c45fa2742a593492b
