@@ -2,21 +2,26 @@
 body {
     background-color: lightgreen;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
+
 .dropdown-menu {
     left: unset !important;
     right: 0 !important;
 }
+
 .nav-item {
+
     // text-align: right !important;
     .nav-link {
         font-size: 0.9rem;
     }
 }
+
 // Kaviya
 /* Apply bold style to the horizontal ruler */
 .dropdown-divider {
@@ -27,17 +32,20 @@ img {
     margin: 10px 0;
     /* Adjust margin as needed */
 }
+
 .navbar-brand {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+
     img {
         max-height: 40px;
         // margin-right: 50px
         /* Adjust the height as needed */
     }
 }
+
 .navbar-toggler {
     flex: 0 0 auto;
     /* Fix typo and set flex properties for the toggler */
@@ -49,7 +57,8 @@ img {
         text-align: center;
     }
 }
-.nav-x{
+
+.nav-x {
     flex-basis: auto;
     flex-grow: 0;
 }
@@ -62,6 +71,7 @@ img {
     // background-size: cover;
     // position: relative;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -70,6 +80,7 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 .caption {
     position: absolute;
     top: 50%;
@@ -77,24 +88,63 @@ img {
     width: 100%;
     color: #fff;
 }
+
 .caption .title {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
 }
+
 .caption .description {
     font-size: 1.5rem;
     text-align: center;
 }
+
 /* Media Queries */
 @media (min-width: 768px) {
     .caption .description {
         text-align: left;
     }
 }
+
 .slide1 {
     background-image: url(/img/OUTER.jpg);
 }
+
 .slide2 {
     background-image: url(/img/vihari-room.jpg);
+}
+
+// search 
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: #0056b3;
+    }
+    
 }

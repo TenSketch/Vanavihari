@@ -26,7 +26,11 @@ img {
   margin: 10px 0;
   /* Adjust margin as needed */
 }
-
+.social-link {
+  text-decoration: none; /* Remove underline */
+  color: black; /* Set font color */
+  margin-right: 15px; /* Add space between links */
+}
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -37,7 +41,15 @@ img {
   max-height: 40px;
   /* Adjust the height as needed */
 }
-
+.navtop{
+  display: block;
+}
+@media screen and (max-width: 767px)
+{
+  .navtop{
+    display:none;
+  }
+}
 .navbar-toggler {
   flex: 0 0 auto;
   /* Fix typo and set flex properties for the toggler */
@@ -99,35 +111,41 @@ img {
 
 .slide2 {
   background-image: url(/img/vihari-room.jpg);
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type=date],
-select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #0056b3;
 }/*# sourceMappingURL=style.css.map */
+
+.search-bar {
+  /* Adjust margin to accommodate additional sections */
+  margin-bottom: 30px;
+}
+
+.col-sm-4 {
+  padding: 0 5px;
+}
+
+.form-select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-button-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.input-group-number {
+  display: flex;
+  align-items: center;
+}
+.input-group-number input.form-control{
+  width: 230px;
+  
+}
+
+.input-group-number button {
+  margin-left: 5px;
+}
+
+.search-button {
+  margin-top: 0px;
+
+}
