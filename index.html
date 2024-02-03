@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,22 +19,20 @@
 </head>
 
 <body>
-
     <header>
         <!-- topbar -->
-        <div class="topbar bg-dark navbar-top d-none d-lg-block">
-            <div class="container">
-                <!-- Left side: Social Media Links -->
-                <div class="nav-left">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
+        <div class="topbar py-2 bg-dark navbar-top d-none d-lg-block">
+            <div class="container d-flex justify-content-between">
+                <!-- nav-items left -->
+                <div class="nav-x d-lg-flex gap-2 align-items-center">
+                    <a class="text-decoration-none text-light" href="index.html">Home</a>
                 </div>
-                <!-- Right side: Sign In Button -->
-                <div class="nav-right">
-                    <a href="mailto:cbet_maredumilli@yahoo.com" class="social-link">cbet_maredumilli@yahoo.com</a>
-                    <a href="tel:+9494151617" class="social-link">9494151617</a>
-                    <a href="#" class="btn btn-primary">Sign In</a>
+                <!-- nav-items right -->
+                <div class="nav-x d-lg-flex gap-3 align-items-center">
+                    <a class="text-decoration-none text-light" href="mailto:cbet_maredumilli@yahoo.com"
+                        title="click to send email">cbet_maredumilli@yahoo.com</a>
+                    <a class="text-decoration-none text-light" href="tel:+919494151617" title="call">9494151617</a>
+                    <a href="sign-in.html"><button type="button" class="btn btn-light">Sign In</button></a>
                 </div>
             </div>
         </div>
@@ -102,7 +100,7 @@
                         </li>
 
                         <li class="nav-item d-lg-none">
-                            <a class="btn btn-primary btn-sm" href="#">Sign In</a>
+                            <a class="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
                         </li>
 
                     </ul>
@@ -112,104 +110,27 @@
         </nav>
 
     </header>
+
     <main>
-        <!-- Gowri carousel -->
+        <section class="banner d-grid align-items-center">
 
-
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true"
-                    aria-label="First slide"></li>
-                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Second slide"></li>
-                <li data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Third slide"></li>
-            </ol>
-            <div class="carousel-inner">
-                <!-- First Slide -->
-                <div class="carousel-item active">
-                    <div class="overlay"></div>
-                    <img src="/img/OUTER-VIEW.jpg" alt="OUTER-VIEW">
-                    <div class="caption">
-                        <div class="title">First Slide Title</div>
-                        <div class="description">Content goes here.</div>
-                    </div>
-                </div>
-
-                <!-- Second Slide -->
-                <div class="carousel-item">
-                    <div class="overlay"></div>
-                    <img src="/img/vihari-room.jpg" alt="vihari-room">
-                    <div class="caption">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="title">Second Slide Title</div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="description">Content goes here. Content goes here.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add more slides following a similar pattern -->
-
+            <div class="banner-content">
+                <h1 class="display-4 text-center text-white">Welcome to Vanavihari Resorts</h1>
+                <h3 class="text-center text-white">A Community Based Eco-Tourism, Maredumilli</h3>
             </div>
-            <!-- carousel end -->
-            <!-- Kaviya search section -->
+        </section>
+        <section class="intro py-5">
             <div class="container">
-                <div class="form-group">
-                    <label for="resort">Select Resort:</label>
-                    <select id="resort">
-                        <option value="Resort 1">Resort 1</option>
-                        <option value="Resort 2">Resort 2</option>
-                        <option value="Resort 3">Resort 3</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="date-range">Select Date Range:</label>
-                    <input type="text" id="date-range" placeholder="Select Date Range">
-                </div>
-                <div class="form-group">
-                    <label for="guests-rooms">Guests and Rooms:</label>
-                    <input type="text" id="guests-rooms" readonly>
-                </div>
-                <button id="search-btn">Search</button>
+                <p class="text-center border border-1 mb-0">Vanavihari resort, nestled in Maredumilli, is a haven for eco-tourism enthusiasts. This
+                    community-centric guesthouse offers a peaceful escape surrounded by nature. Providing cozy cottages
+                    and rooms, it sits within easy reach of Maredumilli Waterfalls, ensuring guests enjoy a tranquil
+                    environment. Delight in breakfast and dinner offerings, along with a relaxing stay at this charming
+                    retreat.</p>
             </div>
-            <!-- search ends -->
-            <!-- our resorts section -->
-            <div class="container mt-5">
-                <div class="row">
-                    <!-- Column 1 -->
-                    <div class="col-md-4">
-                        <a href="#">
-                            <figure>
-                                <img src="/img/OUTER VIEW.jpg" alt="Image" class="img-fluid">
-                                <figcaption class="text-center">Image Name</figcaption>
-                            </figure>
-                        </a>
-                        <div class="text-center mt-3">
-                            <button class="btn btn-primary">Button</button>
-                        </div>
-                    </div>
-                    <!-- Column 2 -->
-                    <div class="col-md-4">
-                        <h4>Heading</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                    </div>
-                    <!-- Column 3 -->
-                    <div class="col-md-4">
-                        <img src="/img/Rampa-falls.jpg" alt="Image" class="img-fluid">
-                        <div class="text-center mt-3" style="background-color: #f0f0f0;">
-                            <p>Image Name</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        </section>
     </main>
-    <footer>
-        <!-- place footer here -->
-    </footer>
+
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -220,6 +141,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="scripts.js"></script>
+
 </body>
 
 </html>
