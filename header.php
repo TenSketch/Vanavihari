@@ -27,7 +27,7 @@
                     <a class="text-decoration-none text-light" href="mailto:cbet_maredumilli@yahoo.com"
                         title="click to send email">cbet_maredumilli@yahoo.com</a>
                     <a class="text-decoration-none text-light" href="tel:+919494151617" title="call">9494151617</a>
-                    <a href="sign-in.html"><button type="button" class="btn btn-light">Sign In</button></a>
+                    <a href="login.php"><button type="button" class="btn btn-light">Sign In</button></a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,6 @@
                         class="d-inline-block align-top img-fluid">
 
                 </a>
-
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav w-100 mt-2 mt-lg-0">
                         <!-- Your navigation items here -->
@@ -63,10 +62,8 @@
                             </li>
                         </div>
 
-                        <a class="navbar-brand mx-auto d-none d-lg-block" href="#">
-                            <img src="./images/vanavihari_logo.png" alt="vanavihari_logo"
-                                class="d-inline-block align-top img-fluid">
-
+                        <a class="navbar-brand mx-auto d-none d-lg-block" href="index.php">
+                            <img src="./images/vanavihari_logo.png" alt="vanavihari_logo" class="d-inline-block align-top img-fluid">
                         </a>
                         <!-- Add horizontal divider after "Tourist Destinations" -->
                         <li class="nav-item">
@@ -95,7 +92,7 @@
                         </li>
 
                         <li class="nav-item d-lg-none">
-                            <a class="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
+                            <a class="btn btn-primary btn-sm" href="login.php">Sign In</a>
                         </li>
 
                     </ul>

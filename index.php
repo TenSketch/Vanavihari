@@ -1,5 +1,4 @@
 <?php include('./header.php'); ?>
-<main>
     <section class="banner d-grid align-items-center">
         <div class="banner-content">
             <h1 class="display-4 text-center text-white">Welcome to Vanavihari Resorts</h1>
@@ -109,7 +108,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3> Vanavihari</h3>
-                    <img class="image-fluid mb-3" style="height:200px; width:300px;" src="./images/outer.jpg">
+                    <img class="image-fluid mb-3 pt-1" style="width:100%;" src="./images/outer.jpg">
                     <p>
                         Vanavihari resort, nestled in Maredumilli, is a haven for eco-tourism enthusiasts. This
                         community-centric guesthouse offers a peaceful escape surrounded by nature. Providing cozy
@@ -120,9 +119,8 @@
                         retreat.
                     </p>
                 </div>
-
                 <!-- Right Column - Displaying Map -->
-                <div class="col-md-6">
+                <div class="col-md-6 mt-5">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2096.9750517228763!2d81.70766415859167!3d17.600715928141202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a373b5d52758873%3A0x718f2b2059db5e0a!2sVanavihari%20Maredumilli!5e0!3m2!1sen!2sin!4v1706798767875!5m2!1sen!2sin"
@@ -133,7 +131,6 @@
             </div>
         </div>
     </section>
-</main>
 <?php include('./footer.php'); ?>
 <script>
     $(function () {
