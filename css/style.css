@@ -1,0 +1,101 @@
+html {
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.btn {
+  padding: 0.25em 1em;
+  border-radius: 3px;
+}
+
+.dropdown-menu {
+  left: unset !important;
+  right: 0 !important;
+}
+
+.nav-item .nav-link {
+  font-size: 0.9rem;
+}
+
+/* Apply bold style to the horizontal ruler */
+.dropdown-divider {
+  border: 0;
+  height: 1px;
+  background-color: #000;
+  /* Set the color of the bold line */
+  margin: 10px 0;
+  /* Adjust margin as needed */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navbar-brand img {
+  max-height: 40px;
+  /* Adjust the height as needed */
+}
+
+.navbar-toggler {
+  flex: 0;
+  /* Fix typo and set flex properties for the toggler */
+}
+
+/* Center the logo only on small screens */
+@media (max-width: 575.98px) {
+  .center-logo {
+    text-align: center;
+  }
+}
+.nav-x {
+  flex-basis: auto;
+  flex-grow: 0;
+}
+
+.banner {
+  background: rgba(0, 0, 0, 0.5) url(../images/vihari-room.jpg) center/cover no-repeat fixed;
+  background-blend-mode: multiply;
+  min-height: 50vh;
+}
+
+.intro {
+  background-color: rgb(205, 240, 185);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type=date],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=style.css.map */
