@@ -13,11 +13,6 @@ img {
   border-radius: 3px;
 }
 
-.dropdown-menu {
-  left: unset !important;
-  right: 0 !important;
-}
-
 .nav-item .nav-link {
   font-size: 0.9rem;
 }
@@ -98,4 +93,25 @@ button {
 }
 button:hover {
   background-color: #0056b3;
+}
+
+/* Adjust lightbox overlay color and opacity */
+.ekko-lightbox .modal-content {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Adjust image container padding and margins */
+.ekko-lightbox .modal-content .ekko-lightbox-container {
+  padding: 20px;
+}
+
+/* Adjust image border radius */
+.ekko-lightbox .ekko-lightbox-item img {
+  border-radius: 5px;
+}
+
+/* Adjust close button style */
+.ekko-lightbox-close {
+  color: white;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

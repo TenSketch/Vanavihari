@@ -1,57 +1,49 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>ResortListing</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-top">
-        <div class="container">
-            <!-- Left side: Social Media Links -->
-            <div class="d-flex align-items-center">
-                <a href="mailto:cbet_maredumilli@yahoo.com" class="social-link">cbet_maredumilli@yahoo.com</a>
-                <a href="tel:+9494151617" class="social-link">9494151617</a>
-            </div>
-    
-            <!-- Right side: Sign In Button -->
-            <div class="ml-auto">
-                <a href="#" class="btn btn-primary">Sign In</a>
+    <header>
+        <!-- topbar -->
+        <div class="topbar py-2 bg-dark navbar-top d-none d-lg-block">
+            <div class="container d-flex justify-content-between">
+                <!-- nav-items left -->
+                <div class="nav-x d-lg-flex gap-2 align-items-center">
+                    <a class="text-decoration-none text-light" href="index.html">Home</a>
+                </div>
+                <!-- nav-items right -->
+                <div class="nav-x d-lg-flex gap-3 align-items-center">
+                    <a class="text-decoration-none text-light" href="mailto:cbet_maredumilli@yahoo.com"
+                        title="click to send email">cbet_maredumilli@yahoo.com</a>
+                    <a class="text-decoration-none text-light" href="tel:+919494151617" title="call">9494151617</a>
+                    <a href="sign-in.html"><button type="button" class="btn btn-light">Sign In</button></a>
+                </div>
             </div>
         </div>
-    </nav>
-    <header>
-        <nav
-            class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <button
-                    class="navbar-toggler d-lg-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId"
-                    aria-controls="collapsibleNavId"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand me-0 d-lg-none" href="#">
-                    <img src="img/vanavihari_logo.png" alt="vanavihari_logo" class="d-inline-block align-top img-fluid">
-                
+                    <img src="img/vanavihari_logo.png" alt="vanavihari_logo"
+                        class="d-inline-block align-top img-fluid">
                 </a>
-
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav w-100 mt-2 mt-lg-0">
                         <!-- Your navigation items here -->
@@ -59,10 +51,19 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <!-- ... other menu items ... -->
-                        <div class="d-flex nav-x">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Resorts</a>
+                        <div class="d-lg-flex nav-x">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Our Resorts</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Vanavihari, Maredumilli</a>
+                                    <a class="dropdown-item" href="#">JunglStar, Valamuru</a>
+                                    <a class="dropdown-item" href="#">Vanyavihari, Rampachodavaram</a>
+                                </div>
                             </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Resorts</a>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
                             </li>
@@ -70,16 +71,15 @@
                                 <a class="nav-link" href="#">Tourist Destinations</a>
                             </li>
                         </div>
-
                         <a class="navbar-brand mx-auto d-none d-lg-block" href="#">
-                            <img src="img/vanavihari_logo.png" alt="vanavihari_logo" class="d-inline-block align-top img-fluid">
-                        
+                            <img src="img/vanavihari_logo.png" alt="vanavihari_logo"
+                                class="d-inline-block align-top img-fluid">
                         </a>
                         <!-- Add horizontal divider after "Tourist Destinations" -->
                         <li class="nav-item">
                             <hr class="dropdown-divider">
                         </li>
-                        <div class="d-flex nav-x">
+                        <div class="d-lg-flex nav-x">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Tribal Community</a>
                             </li>
@@ -100,178 +100,204 @@
                         <li class="nav-item d-lg-none">
                             <a class="nav-link" href="#">9494151617</a>
                         </li>
-                    
                         <li class="nav-item d-lg-none">
-                            <a class="btn btn-primary btn-sm" href="#">Sign In</a>
+                            <a class="btn btn-primary btn-sm" href="sign-in.html">Sign In</a>
                         </li>
-
                     </ul>
-                    
                 </div>
             </div>
         </nav>
-        
     </header>
-    
-    <div class="container mt-4">
-        <div class="row">
 
-            <!-- First Column -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card">
-                    <!-- Content for the first column -->
-                    <img src="img\OUTER VIEW (3).jpg" class="card-img-top mx-auto d-block" alt="Your Image" height="200px"
-                        width="360px">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Maximum capacity
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person-standing" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" />
-                            </svg>
-                        </h5>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Details</a>cd 
-                    </div>
-                </div>
-            </div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Resorts</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Resort Name</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Existing form elements -->
+        <div class="col-md-4">
+            <label for="location" class="form-label">Search Location</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter location">
+        </div>
+        <div class="col-md-3">
+            <label for="checkin" class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="checkin">
+        </div>
+        <div class="col-md-3">
+            <label for="checkout" class="form-label">Check-out Date</label>
+            <input type="date" class="form-control" id="checkout">
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+            <label class="visually-hidden">Search Button</label>
+            <button class="btn btn-primary w-100">Search</button>
+        </div>
+    </div>
 
-            <!-- Second Column -->
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- Content for the second column -->
-                <div class="card">
-                    <h3 class="card-title text-center mb-4">Amenities</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Accommodation</li>
-                                <li class="list-group-item">Breakfast</li>
-                                <li class="list-group-item">Water Heater</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Air Conditioning</li>
-                                <li class="list-group-item">Luxury Bedding</li>
-                                <li class="list-group-item">Free Wi-Fi</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="card-text mt-3 text-center">Rate: INR 7500/night</p>
-                    <div class="card-body text-center">
-                        <a href="#" class="btn btn-primary">Book</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third Column -->
-            <div class="col-lg-4 col-md-12 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-4">Booking Summary</h5>
-                        <div class="container mt-3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="checkin">Check-in Date:</label>
-                                    <div class="input-group">
-                                        <input type="text" id="checkin" class="form-control">
-                                        <button class="btn btn-outline-secondary" type="button" id="checkinIcon">
-                                            <!-- Calendar icon using SVG from Bootstrap -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-calendar"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm1 0a1 1 0 0 1 1-1h1a1 1 0 0 1 2 0h6a1 1 0 0 1 2 0h1a1 1 0 0 1 1 1v1H0V2zM0 4v1h16V4H0zm0 2v1h16V6H0zm0 2v1h16V8H0zm0 2v1h16v-1H0zm0 2v1h16v-1H0zm7-9h2v2H7V7z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- ... (similar code for the Check-out Date) -->
-                                <div class="col-md-6">
-                                    <label for="checkout">Check-out Date:</label>
-                                    <div class="input-group">
-                                        <input type="text" id="checkout" class="form-control">
-                                        <button class="btn btn-outline-secondary" type="button" id="checkoutIcon">
-                                            <!-- Calendar icon using SVG from Bootstrap -->
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-calendar"
-                                                viewBox="0 0 16 16">
-                                                <path
-                                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm1 0a1 1 0 0 1 1-1h1a1 1 0 0 1 2 0h6a1 1 0 0 1 2 0h1a1 1 0 0 1 1 1v1H0V2zM0 4v1h16V4H0zm0 2v1h16V6H0zm0 2v1h16V8H0zm0 2v1h16v-1H0zm0 2v1h16v-1H0zm7-9h2v2H7V7z" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-4 text-end">
-                            <p>Room Rent: INR 7500/night</p>
-                            <p>Taxes: INR 1500</p>
-                            <hr>
-                            <p>Total: INR 9000</p>
-                            <button class="btn btn-primary mt-3">Pay Now</button>
-                        </div>
-                        
-                        
-                    </div>
+    <div class="row mt-4">
+        <!-- Map content column -->
+        <div class="col-md-3">
+            <div class="row" id="map-container">
+                <div class="col-md-12">
+                    <!-- Replace latitude and longitude with the desired coordinates and adjust the zoom level -->
+                    <iframe id="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0332880934225!2d81.7097820746316!3d17.601154096612742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a373b5d52758873%3A0x718f2b2059db5e0a!2sVanavihari%20Maredumilli!5e0!3m2!1sen!2sin!4v1706878539086!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- "Show Resort" button -->
+                    <button id="show-resort-btn" class="btn btn-secondary">Show Resort</button>
                 </div>
             </div>
         </div>
-    </div>
-                   
+        <!-- Resort picture column -->
+        <div class="col-md-3">
+            <div class="card">
+                <!-- Content for the first column -->
+                <img src="img/OUTER VIEW (3).jpg" class="card-img-top mx-auto d-block img-fluid" alt="Resort Image" style="width: 100%; height: 250px;">
 
-               
-    <div class="container-fluid mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h5 class="text-center">Location Map</h5>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2096.9750517228763!2d81.70766415859167!3d17.600715928141202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a373b5d52758873%3A0x718f2b2059db5e0a!2sVanavihari%20Maredumilli!5e0!3m2!1sen!2sin!4v1706798767875!5m2!1sen!2sin"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card-body text-center">
+                    <h5 class="card-title">Maximum capacity
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-standing" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0" />
+                        </svg>
+                    </h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Details</a>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
+        <!-- Resort details column -->
+        <div class="col-md-4 text-center"> <!-- Added text-center class to center-align content -->
+            <h5 class="mb-3 fs-5">Vanavihari</h5> <!-- Added fs-5 class for smaller font size -->
+            <!-- Add more details if needed -->
+            <p class="fs-6"> Vanavihari is conveniently positioned, it's just a 4-minute walk from the Maredumilli Waterfalls and 55 km away from the NH30 national highway.</p> <!-- Added fs-6 class for smaller font size -->
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h3>Links</h3><br>
-                    <a href="#">About us</a><br><br>
-                    <a href="#">Awards and News</a><br><br>
-                    <a href="#">Privacy Policy</a><br><br>
-                    <a href="#">Terms and Conditions</a><br><br>
+                <div class="col-md-6">
+                    <h6>Amenities</h6>
+                    <ul class="list-group list-group-flush fs-6"> <!-- Added fs-6 class for smaller font size -->
+                        <li class="list-group-item">Accommodation</li>
+                        <li class="list-group-item">Breakfast</li>
+                        <li class="list-group-item">Water Heater</li>
+                    </ul>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <h3>Contact Info</h3><br>
-                    <p>For bookings regular queries and info:<br><br>Co-ordinator(Complex Manager),<br><br>
-                    Community Based Eco-Tourism,<br><br>Maredumilli,<br><br>9494151617<br><br>cbet_maredumilli@yahoo.com</p>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h3>Contact Us</h3><br>
-                    <form class="contact-form">
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" placeholder="Your Message"></textarea>
-                        </div>
-                        <center><button type="submit" class="btn btn-light">Send Message</button></center>
-                    </form>
+                
+                <div class="col-md-6">
+                    <ul class="list-group list-group-flush fs-6"> <!-- Added fs-6 class for smaller font size -->
+                        <br>
+                        <li class="list-group-item">Air Conditioning</li>
+                        <li class="list-group-item">Luxury Bedding</li>
+                        <li class="list-group-item">Free Wi-Fi</li>
+                    </ul>
                 </div>
             </div>
+            <a href="#" class="btn btn-primary mt-3 fs-6">Book</a> <!-- Added fs-6 class for smaller font size -->
         </div>
-    </footer>
+        
+        
+        <!-- Booking summary column (fixed) -->
+        <div class="col-md-2" id="booking-summary">
+            <div class="sticky-top">
+                <h5 class="mb-3">Booking Summary</h5>
+                <!-- Add booking details and summary here -->
+                <div class="mb-3 row">
+                    <label for="adults" class="col-6 col-form-label">Adults:</label>
+                    <div class="col-6">
+                        <input type="number" id="adults" name="adults" value="2" min="1" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="children" class="col-6 col-form-label">Children:</label>
+                    <div class="col-6">
+                        <input type="number" id="children" name="children" value="0" min="0" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="room-rent" class="col-6 col-form-label">Room Rent:</label>
+                    <div class="col-6">
+                        <input type="text" id="room-rent" name="room-rent" value="$150" readonly class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="taxes" class="col-6 col-form-label">Taxes:</label>
+                    <div class="col-6">
+                        <input type="text" id="taxes" name="taxes" value="$30" readonly class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="grand-total" class="col-6 col-form-label">Grand Total:</label>
+                    <div class="col-6">
+                        <input type="text" id="grand-total" name="grand-total" value="$180" readonly class="form-control">
+                    </div>
+                </div>
+                <!-- "Pay Now" button aligned to the right -->
+                <div class="text-end">
+                    <button class="btn btn-primary">Pay Now</button>
+                </div>
+                <!-- Add more details as needed -->
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Links</h3><br>
+                <ul class="list-unstyled">
+                    <li><a class="text-decoration-none text-white" href="#">About us</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Awards and News</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Privacy Policy</a></li>
+                    <li><a class="text-decoration-none text-white" href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Contact Info</h3>
+                <address>Co-ordinator(Complex Manager),<br>
+                    Community Based Eco-Tourism, <br>
+                    Maredumilli.
+                </address>
+                <ul class="list-unstyled">
+                    <li> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;
+                        <a class="text-decoration-none text-light" href="mailto:cbet_maredumilli@yahoo.com"
+                            title="click to send email">cbet_maredumilli@yahoo.com</a>
+                    </li>
+                    <li>
+                        <!-- font awesome email -->
+                        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
+                        <a class="text-decoration-none text-light" href="tel:+919494151617"
+                            title="call">9494151617</a>
+                </ul>
+                </li>
 
 
-    <!-- Bootstrap JS and Popper.js (optional) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofNol/lZN/C9HQ" crossorigin="anonymous"></script>
+            </div>
+            <div class="col-md-4">
+                <h3>Send a message</h3>
+                <form class="contact-form">
+                    <div class="mb-2">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="mb-2">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class="mb-2">
+                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-light">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
-
 </html>

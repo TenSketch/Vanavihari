@@ -19,10 +19,10 @@ img {
     
 
 }
-.dropdown-menu {
-    left: unset !important;
-    right: 0 !important;
-}
+// .dropdown-menu {
+//     left: unset !important;
+//     right: 0 !important;
+// }
 
 .nav-item {
 
@@ -115,3 +115,25 @@ button {
     }
 
 }
+
+/* Adjust lightbox overlay color and opacity */
+.ekko-lightbox .modal-content {
+    background-color: rgba(0, 0, 0, 0.8);  // Semi-transparent black background
+  }
+  
+  /* Adjust image container padding and margins */
+  .ekko-lightbox .modal-content .ekko-lightbox-container {
+    padding: 20px;
+  }
+  
+  /* Adjust image border radius */
+  .ekko-lightbox .ekko-lightbox-item img {
+    border-radius: 5px;
+  }
+  
+  /* Adjust close button style */
+  .ekko-lightbox-close {
+    color: white;
+    font-size: 24px;
+  }
+  
