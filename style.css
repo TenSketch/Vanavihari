@@ -13,11 +13,6 @@ img {
   border-radius: 3px;
 }
 
-.dropdown-menu {
-  left: unset !important;
-  right: 0 !important;
-}
-
 .nav-item .nav-link {
   font-size: 0.9rem;
 }

@@ -53,10 +53,19 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <!-- ... other menu items ... -->
-                        <div class="d-flex nav-x">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Resorts</a>
+                        <div class="d-lg-flex nav-x">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Our Resorts</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">Vanavihari, Maredumilli</a>
+                                    <a class="dropdown-item" href="#">JunglStar, Valamuru</a>
+                                    <a class="dropdown-item" href="#">Vanyavihari, Rampachodavaram</a>
+                                </div>
                             </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Resorts</a>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About Us</a>
                             </li>
@@ -72,7 +81,7 @@
                         <li class="nav-item">
                             <hr class="dropdown-divider">
                         </li>
-                        <div class="d-flex nav-x">
+                        <div class="d-lg-flex nav-x">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Tribal Community</a>
                             </li>
@@ -122,7 +131,7 @@
             <div class="container">
                 <h2 class="text-center mb-4">Book your preferred Resort</h2>
                 <form>
-                    <div class="row align-items-center gap-2">
+                    <div class="row align-items-center gap-2 gap-lg-0">
                         <div class="col-md-3">
                             <label for="resort" class="form-label">Select Resort</label>
                             <select class="form-select" id="resort">
@@ -229,7 +238,7 @@
                             <a class="text-decoration-none text-light" href="mailto:cbet_maredumilli@yahoo.com"
                                 title="click to send email">cbet_maredumilli@yahoo.com</a>
                         </li>
-                        <li> 
+                        <li>
                             <!-- font awesome email -->
                             <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;
                             <a class="text-decoration-none text-light" href="tel:+919494151617"
