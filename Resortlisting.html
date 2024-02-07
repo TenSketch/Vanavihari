@@ -109,54 +109,43 @@
         </nav>
     </header>
 
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-md-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Resorts</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Resort Name</li>
-                </ol>
-            </nav>
-        </div>
-        <!-- Existing form elements -->
-        <div class="col-md-4">
-            <label for="location" class="form-label">Search Location</label>
-            <input type="text" class="form-control" id="location" placeholder="Enter location">
-        </div>
-        <div class="col-md-3">
-            <label for="checkin" class="form-label">Check-in Date</label>
-            <input type="date" class="form-control" id="checkin">
-        </div>
-        <div class="col-md-3">
-            <label for="checkout" class="form-label">Check-out Date</label>
-            <input type="date" class="form-control" id="checkout">
-        </div>
-        <div class="col-md-2 d-flex align-items-end">
-            <label class="visually-hidden">Search Button</label>
-            <button class="btn btn-primary w-100">Search</button>
-        </div>
-    </div>
-
-    <div class="row mt-4">
-        <!-- Map content column -->
-        <div class="col-md-3">
-            <div class="row" id="map-container">
-                <div class="col-md-12">
-                    <!-- Replace latitude and longitude with the desired coordinates and adjust the zoom level -->
-                    <iframe id="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0332880934225!2d81.7097820746316!3d17.601154096612742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a373b5d52758873%3A0x718f2b2059db5e0a!2sVanavihari%20Maredumilli!5e0!3m2!1sen!2sin!4v1706878539086!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <!-- "Show Resort" button -->
-                    <button id="show-resort-btn" class="btn btn-secondary">Show Resort</button>
-                </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Resorts</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Resort Name</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- Existing form elements -->
+            <div class="col-md-4">
+                <label for="location" class="form-label">Search Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Enter location">
+            </div>
+            <div class="col-md-3">
+                <label for="checkin" class="form-label">Check-in Date</label>
+                <input type="date" class="form-control" id="checkin">
+            </div>
+            <div class="col-md-3">
+                <label for="checkout" class="form-label">Check-out Date</label>
+                <input type="date" class="form-control" id="checkout">
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <label class="visually-hidden">Search Button</label>
+                <button class="btn btn-primary w-100">Search</button>
             </div>
         </div>
-        <!-- Resort picture column -->
-        <div class="col-md-3">
-            <div class="card">
-                <!-- Content for the first column -->
-                <img src="img/OUTER VIEW (3).jpg" class="card-img-top mx-auto d-block img-fluid" alt="Resort Image" style="width: 100%; height: 250px;">
 
+        <!-- First Row: Resort Image and Details -->
+        <div class="row mt-4">
+            <!-- Resort image column -->
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/OUTER VIEW (3).jpg" class="card-img-top mx-auto d-block img-fluid" alt="Resort Image">
+                </div>
                 <div class="card-body text-center">
                     <h5 class="card-title">Maximum capacity
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -168,83 +157,93 @@
                     <p class="card-text"></p>
                     <a href="#" class="btn btn-primary">Details</a>
                 </div>
+
+            </div>
+            <!-- Resort details column -->
+            <div class="col-md-6 text-center">
+                <h5 class="mb-3 fs-5">Vanavihari</h5>
+                <p class="fs-6"> Vanavihari is conveniently positioned, it's just a 4-minute walk from the Maredumilli Waterfalls and 55 km away from the NH30 national highway.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>Amenities</h6>
+                        <ul class="list-group list-group-flush fs-6">
+                            <li class="list-group-item">Accommodation</li>
+                            <li class="list-group-item">Breakfast</li>
+                            <li class="list-group-item">Water Heater</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush fs-6">
+                            <br>
+                            <li class="list-group-item">Air Conditioning</li>
+                            <li class="list-group-item">Luxury Bedding</li>
+                            <li class="list-group-item">Free Wi-Fi</li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary mt-3 fs-6">Book</a>
             </div>
         </div>
-        <!-- Resort details column -->
-        <div class="col-md-4 text-center"> <!-- Added text-center class to center-align content -->
-            <h5 class="mb-3 fs-5">Vanavihari</h5> <!-- Added fs-5 class for smaller font size -->
-            <!-- Add more details if needed -->
-            <p class="fs-6"> Vanavihari is conveniently positioned, it's just a 4-minute walk from the Maredumilli Waterfalls and 55 km away from the NH30 national highway.</p> <!-- Added fs-6 class for smaller font size -->
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>Amenities</h6>
-                    <ul class="list-group list-group-flush fs-6"> <!-- Added fs-6 class for smaller font size -->
-                        <li class="list-group-item">Accommodation</li>
-                        <li class="list-group-item">Breakfast</li>
-                        <li class="list-group-item">Water Heater</li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-6">
-                    <ul class="list-group list-group-flush fs-6"> <!-- Added fs-6 class for smaller font size -->
-                        <br>
-                        <li class="list-group-item">Air Conditioning</li>
-                        <li class="list-group-item">Luxury Bedding</li>
-                        <li class="list-group-item">Free Wi-Fi</li>
-                    </ul>
+
+        <!-- Second Row: Map and Booking Summary -->
+        <div class="row mt-4">
+            <!-- Map content column -->
+            <div class="col-md-7">
+                <div class="row" id="map-container">
+                    <div class="col-md-12">
+                        <iframe id="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.0332880934225!2d81.7097820746316!3d17.601154096612742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a373b5d52758873%3A0x718f2b2059db5e0a!2sVanavihari%20Maredumilli!5e0!3m2!1sen!2sin!4v1706878539086!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!-- "Show Resort" button -->
+                        <button id="show-resort-btn" class="btn btn-secondary">Show Resort</button><br><br>
+                    </div>
                 </div>
             </div>
-            <a href="#" class="btn btn-primary mt-3 fs-6">Book</a> <!-- Added fs-6 class for smaller font size -->
-        </div>
-        
-        
-        <!-- Booking summary column (fixed) -->
-        <div class="col-md-2" id="booking-summary">
-            <div class="sticky-top">
-                <h5 class="mb-3">Booking Summary</h5>
-                <!-- Add booking details and summary here -->
-                <div class="mb-3 row">
-                    <label for="adults" class="col-6 col-form-label">Adults:</label>
-                    <div class="col-6">
-                        <input type="number" id="adults" name="adults" value="2" min="1" class="form-control">
+            <!-- Booking summary column (fixed) -->
+            <div class="col-md-5" id="booking-summary">
+                <div class="sticky-top">
+                    <h5 class="mb-3">Booking Summary</h5>
+                    <div class="mb-3 row">
+                        <label for="adults" class="col-6 col-form-label">Adults:</label>
+                        <div class="col-6">
+                            <input type="number" id="adults" name="adults" value="2" min="1" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="children" class="col-6 col-form-label">Children:</label>
-                    <div class="col-6">
-                        <input type="number" id="children" name="children" value="0" min="0" class="form-control">
+                    <div class="mb-3 row">
+                        <label for="children" class="col-6 col-form-label">Children:</label>
+                        <div class="col-6">
+                            <input type="number" id="children" name="children" value="0" min="0" class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="room-rent" class="col-6 col-form-label">Room Rent:</label>
-                    <div class="col-6">
-                        <input type="text" id="room-rent" name="room-rent" value="$150" readonly class="form-control">
+                    <div class="mb-3 row">
+                        <label for="room-rent" class="col-6 col-form-label">Room Rent:</label>
+                        <div class="col-6">
+                            <input type="text" id="room-rent" name="room-rent" value="$150" readonly class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="taxes" class="col-6 col-form-label">Taxes:</label>
-                    <div class="col-6">
-                        <input type="text" id="taxes" name="taxes" value="$30" readonly class="form-control">
+                    <div class="mb-3 row">
+                        <label for="taxes" class="col-6 col-form-label">Taxes:</label>
+                        <div class="col-6">
+                            <input type="text" id="taxes" name="taxes" value="$30" readonly class="form-control">
+                        </div>
                     </div>
-                </div>
-                <div class="mb-3 row">
-                    <label for="grand-total" class="col-6 col-form-label">Grand Total:</label>
-                    <div class="col-6">
-                        <input type="text" id="grand-total" name="grand-total" value="$180" readonly class="form-control">
+                    <div class="mb-3 row">
+                        <label for="grand-total" class="col-6 col-form-label">Grand Total:</label>
+                        <div class="col-6">
+                            <input type="text" id="grand-total" name="grand-total" value="$180" readonly class="form-control">
+                        </div>
                     </div>
+                    <!-- "Pay Now" button aligned to the right -->
+                    <div class="text-end">
+                        <button class="btn btn-primary">Pay Now</button>
+                    </div>
+                    <!-- Add more details as needed -->
                 </div>
-                <!-- "Pay Now" button aligned to the right -->
-                <div class="text-end">
-                    <button class="btn btn-primary">Pay Now</button>
-                </div>
-                <!-- Add more details as needed -->
             </div>
         </div>
-        
 
     </div>
-</div>
 
+    
 <!-- Bootstrap JS and Popper.js scripts (required for Bootstrap components) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <footer class="bg-dark text-white py-4">
